@@ -1,7 +1,7 @@
 {
-  "name": "remarkable",
+  "name": "@noticeable/remarkable",
   "description": "Markdown parser, done right. 100% Commonmark support, extensions, syntax plugins, high speed - all in one.",
-  "version": "1.7.0",
+  "version": "1.7.2",
   "homepage": "https://github.com/jonschlinkert/remarkable",
   "maintainers": [
     "doowb <brian.woodward@sellside.com>",
@@ -38,7 +38,7 @@
     "Una Ma <maruilian11@cdnjs.com.tw> (https://github.com/maruilian11)",
     "Vitaly Puzrin <vitaly@rcdesign.ru> (http://gravatar.com/puzrin)"
   ],
-  "repository": "jonschlinkert/remarkable",
+  "repository": "@noticeable/remarkable",
   "bugs": {
     "url": "https://github.com/jonschlinkert/remarkable/issues"
   },
@@ -59,12 +59,14 @@
   },
   "dependencies": {
     "argparse": "~0.1.15",
-    "autolinker": "~0.15.0"
+    "autolinker": "~0.15.0",
+    "eslint-config-google": "^0.9.1"
   },
   "devDependencies": {
     "ansi": "^0.3.0",
     "benchmark": "^1.0.0",
     "commonmark": "0.12.0",
+    "eslint-plugin-html": "^4.0.2",
     "gulp-format-md": "^0.1.10",
     "highlight.js": "^9.7.0",
     "marked": "0.3.2",
