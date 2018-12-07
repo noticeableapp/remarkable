@@ -1,8 +1,8 @@
 {
-  "name": "remarkable",
-  "description": "Markdown parser, done right. 100% Commonmark support, extensions, syntax plugins, high speed - all in one.",
-  "version": "1.7.0",
-  "homepage": "https://github.com/jonschlinkert/remarkable",
+  "name": "@noticeable/remarkable",
+  "description": "Markdown parser, done right. 100% Commonmark support, extensions, syntax plugins, high speed - all in one (adapted for ES6 module import support)",
+  "version": "3.0.0-esm.1",
+  "homepage": "https://github.com/noticeableapp/remarkable",
   "maintainers": [
     "doowb <brian.woodward@sellside.com>",
     "jonschlinkert <github@sellside.com>"
@@ -38,7 +38,7 @@
     "Una Ma <maruilian11@cdnjs.com.tw> (https://github.com/maruilian11)",
     "Vitaly Puzrin <vitaly@rcdesign.ru> (http://gravatar.com/puzrin)"
   ],
-  "repository": "jonschlinkert/remarkable",
+  "repository": "noticeableapp/remarkable",
   "bugs": {
     "url": "https://github.com/jonschlinkert/remarkable/issues"
   },
@@ -50,6 +50,7 @@
     "lib"
   ],
   "main": "index.js",
+  "module": "./dist/remarkable.esm.js",
   "bin": "./bin/remarkable.js",
   "engines": {
     "node": ">= 0.10.0"
@@ -68,7 +69,9 @@
     "gulp-format-md": "^0.1.10",
     "highlight.js": "^9.7.0",
     "marked": "0.3.2",
-    "mocha": "*"
+    "mocha": "*",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^3.4.0"
   },
   "keywords": [
     "commonmark",
